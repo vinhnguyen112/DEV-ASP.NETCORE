@@ -1,0 +1,120 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ASP.NETCORE\\WEBDEMO\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{248E1C38-B9F3-41F6-98EF-3B195D162092}|WEBDEMO\\WEBDEMO.csproj|d:\\asp.netcore\\webdemo\\webdemo\\views\\productcontroller1\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{248E1C38-B9F3-41F6-98EF-3B195D162092}|WEBDEMO\\WEBDEMO.csproj|solutionrelative:webdemo\\views\\productcontroller1\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{248E1C38-B9F3-41F6-98EF-3B195D162092}|WEBDEMO\\WEBDEMO.csproj|d:\\asp.netcore\\webdemo\\webdemo\\controllers\\productcontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{248E1C38-B9F3-41F6-98EF-3B195D162092}|WEBDEMO\\WEBDEMO.csproj|solutionrelative:webdemo\\controllers\\productcontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{248E1C38-B9F3-41F6-98EF-3B195D162092}|WEBDEMO\\WEBDEMO.csproj|d:\\asp.netcore\\webdemo\\webdemo\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{248E1C38-B9F3-41F6-98EF-3B195D162092}|WEBDEMO\\WEBDEMO.csproj|solutionrelative:webdemo\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{248E1C38-B9F3-41F6-98EF-3B195D162092}|WEBDEMO\\WEBDEMO.csproj|d:\\asp.netcore\\webdemo\\webdemo\\views\\demo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{248E1C38-B9F3-41F6-98EF-3B195D162092}|WEBDEMO\\WEBDEMO.csproj|solutionrelative:webdemo\\views\\demo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{248E1C38-B9F3-41F6-98EF-3B195D162092}|WEBDEMO\\WEBDEMO.csproj|d:\\asp.netcore\\webdemo\\webdemo\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{248E1C38-B9F3-41F6-98EF-3B195D162092}|WEBDEMO\\WEBDEMO.csproj|solutionrelative:webdemo\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{248E1C38-B9F3-41F6-98EF-3B195D162092}|WEBDEMO\\WEBDEMO.csproj|d:\\asp.netcore\\webdemo\\webdemo\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{248E1C38-B9F3-41F6-98EF-3B195D162092}|WEBDEMO\\WEBDEMO.csproj|solutionrelative:webdemo\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\WEBDEMO\\WEBDEMO\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WEBDEMO\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\ASP.NETCORE\\WEBDEMO\\WEBDEMO\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WEBDEMO\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-03T13:12:12.933Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\WEBDEMO\\WEBDEMO\\Views\\ProductController1\\Index.cshtml",
+              "RelativeDocumentMoniker": "WEBDEMO\\Views\\ProductController1\\Index.cshtml",
+              "ToolTip": "D:\\ASP.NETCORE\\WEBDEMO\\WEBDEMO\\Views\\ProductController1\\Index.cshtml",
+              "RelativeToolTip": "WEBDEMO\\Views\\ProductController1\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-03T13:32:49.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductController1.cs",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\WEBDEMO\\WEBDEMO\\Controllers\\ProductController1.cs",
+              "RelativeDocumentMoniker": "WEBDEMO\\Controllers\\ProductController1.cs",
+              "ToolTip": "D:\\ASP.NETCORE\\WEBDEMO\\WEBDEMO\\Controllers\\ProductController1.cs",
+              "RelativeToolTip": "WEBDEMO\\Controllers\\ProductController1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T13:32:38.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\WEBDEMO\\WEBDEMO\\Views\\Demo\\Index.cshtml",
+              "RelativeDocumentMoniker": "WEBDEMO\\Views\\Demo\\Index.cshtml",
+              "ToolTip": "D:\\ASP.NETCORE\\WEBDEMO\\WEBDEMO\\Views\\Demo\\Index.cshtml",
+              "RelativeToolTip": "WEBDEMO\\Views\\Demo\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-03T13:30:31.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\WEBDEMO\\WEBDEMO\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "WEBDEMO\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\ASP.NETCORE\\WEBDEMO\\WEBDEMO\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "WEBDEMO\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-03T13:33:06.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\WEBDEMO\\WEBDEMO\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WEBDEMO\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\ASP.NETCORE\\WEBDEMO\\WEBDEMO\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WEBDEMO\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T13:32:20.933Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

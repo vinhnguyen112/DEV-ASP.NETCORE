@@ -1,0 +1,112 @@
+@{
+    ViewData["Title"] = "Trang chủ";
+}
+<!-- Banner Carousel Section -->
+<div id="azureCarousel" class="carousel slide mb-5 rounded-3 overflow-hidden shadow" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#azureCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#azureCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#azureCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+            <div class="p-5 text-white text-center" style="background: linear-gradient(135deg, #002050 0%, #0052a3 100%); min-height: 350px;">
+                <div class="py-4">
+                    <h1 class="display-5 fw-bold mb-3">Microsoft Azure</h1>
+                    <div class="mb-3 d-flex justify-content-center align-items-center gap-3">
+                    </div>
+                    <p class="lead mb-4">Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.</p>
+                    <a href="https://learn.microsoft.com/aspnet/core" target="_blank" class="btn btn-light text-dark px-4 fw-semibold shadow-sm">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+            <div class="p-5 text-white text-center" style="background: linear-gradient(135deg, #107c41 0%, #1f9a55 100%); min-height: 350px;">
+                <div class="py-4">
+                    <h1 class="display-5 fw-bold mb-3">ASP.NET Core Web Apps</h1>
+                    <div class="mb-3 d-flex justify-content-center align-items-center gap-3">
+                        <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" /></svg>
+                        <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-white"><rect x="2" y="3" width="20" height="14" rx="2" ry="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" /></svg>
+                    </div>
+                    <p class="lead mb-4">Fast, lightweight, and cross-platform framework for building modern web applications.</p>
+                    <a href="https://dotnet.microsoft.com/" target="_blank" class="btn btn-light text-dark px-4 fw-semibold shadow-sm">Explore .NET</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+            <div class="p-5 text-white text-center" style="background: linear-gradient(135deg, #4b11a8 0%, #7928ca 100%); min-height: 350px;">
+                <div class="py-4">
+                    <h1 class="display-5 fw-bold mb-3">Cloud Databases & AI Services</h1>
+                    <div class="mb-3 d-flex justify-content-center align-items-center gap-3">
+                        <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /></svg>
+                        <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
+                    </div>
+                    <p class="lead mb-4">Empower your applications with scalable database integration and smart AI capabilities.</p>
+                    <a href="https://azure.microsoft.com/" target="_blank" class="btn btn-light text-dark px-4 fw-semibold shadow-sm">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#azureCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#azureCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- Danh sách sản phẩm Section -->
+<div class="container mb-5">
+    <h2 class="mb-4 fw-normal">Danh sách sản phẩm</h2>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+        <!-- Sản phẩm 1 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm border">
+                <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=500&q=80" class="card-img-top p-3" alt="Product Name 1" style="height: 220px; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-6 text-muted">Product Name 1</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sản phẩm 2 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm border">
+                <img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=500&q=80" class="card-img-top p-3" alt="Product Name 2" style="height: 220px; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-6 text-muted">Product Name 2</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sản phẩm 3 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm border">
+                <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=500&q=80" class="card-img-top p-3" alt="Product Name 3" style="height: 220px; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-6 text-muted">Product Name 3</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sản phẩm 4 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm border">
+                <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=500&q=80" class="card-img-top p-3" alt="Product Name 4" style="height: 220px; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-6 text-muted">Product Name 4</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

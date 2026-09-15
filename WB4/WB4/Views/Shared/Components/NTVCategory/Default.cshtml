@@ -1,0 +1,12 @@
+@model IEnumerable<WB4.Models.NTVCategory>
+<div class="bg-danger">
+    <ul class="list-group">
+        <li class="list-group-item active" aria-current="true">Danh mục</li>
+        @foreach (var category in Model)
+        {
+            <li class="list-group-item">
+                <a asp-controller="NTVproduct" asp-action="Index" asp-route-pid="@category.CategoryId">@category.CategoryName</a>
+            </li>
+        }
+    </ul>
+</div>

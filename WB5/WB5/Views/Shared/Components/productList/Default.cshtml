@@ -1,0 +1,18 @@
+﻿@model List<WB5.Models.Product>
+
+<div class="row position-relative">
+    <div class="col-12 mb-2 text-end">
+        <span class="badge bg-warning text-dark">Load từ component</span>
+    </div>
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4 mb-3">
+            <div class="card h-100 shadow-sm">
+                <img src="@item.ImageUrl" class="card-img-top" style="height: 140px; object-fit: contain;" alt="@item.Name" />
+                <div class="card-body text-center p-2">
+                    <p class="small fw-bold mb-1">@item.Name</p>
+                </div>
+            </div>
+        </div>
+    }
+</div>

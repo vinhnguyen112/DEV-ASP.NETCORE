@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ASP.NETCORE\\WB4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B972EA-7975-4673-8BFB-936A04264FFA}|WB4\\WB4.csproj|d:\\asp.netcore\\wb4\\wb4\\views\\shared\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6B972EA-7975-4673-8BFB-936A04264FFA}|WB4\\WB4.csproj|solutionrelative:wb4\\views\\shared\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B972EA-7975-4673-8BFB-936A04264FFA}|WB4\\WB4.csproj|d:\\asp.netcore\\wb4\\wb4\\controllers\\ntvproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B972EA-7975-4673-8BFB-936A04264FFA}|WB4\\WB4.csproj|solutionrelative:wb4\\controllers\\ntvproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B972EA-7975-4673-8BFB-936A04264FFA}|WB4\\WB4.csproj|d:\\asp.netcore\\wb4\\wb4\\viewcomponents\\ntvcategoryviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B972EA-7975-4673-8BFB-936A04264FFA}|WB4\\WB4.csproj|solutionrelative:wb4\\viewcomponents\\ntvcategoryviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B972EA-7975-4673-8BFB-936A04264FFA}|WB4\\WB4.csproj|d:\\asp.netcore\\wb4\\wb4\\views\\shared\\components\\ntvcategory\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6B972EA-7975-4673-8BFB-936A04264FFA}|WB4\\WB4.csproj|solutionrelative:wb4\\views\\shared\\components\\ntvcategory\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\WB4\\WB4\\Views\\Shared\\Index.cshtml",
+              "RelativeDocumentMoniker": "WB4\\Views\\Shared\\Index.cshtml",
+              "ToolTip": "D:\\ASP.NETCORE\\WB4\\WB4\\Views\\Shared\\Index.cshtml",
+              "RelativeToolTip": "WB4\\Views\\Shared\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-10T14:09:52.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NTVProductController.cs",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\WB4\\WB4\\Controllers\\NTVProductController.cs",
+              "RelativeDocumentMoniker": "WB4\\Controllers\\NTVProductController.cs",
+              "ToolTip": "D:\\ASP.NETCORE\\WB4\\WB4\\Controllers\\NTVProductController.cs",
+              "RelativeToolTip": "WB4\\Controllers\\NTVProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T14:09:13.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NTVCategoryViewComponent.cs",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\WB4\\WB4\\ViewComponents\\NTVCategoryViewComponent.cs",
+              "RelativeDocumentMoniker": "WB4\\ViewComponents\\NTVCategoryViewComponent.cs",
+              "ToolTip": "D:\\ASP.NETCORE\\WB4\\WB4\\ViewComponents\\NTVCategoryViewComponent.cs",
+              "RelativeToolTip": "WB4\\ViewComponents\\NTVCategoryViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T14:09:08.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\WB4\\WB4\\Views\\Shared\\Components\\NTVCategory\\Default.cshtml",
+              "RelativeDocumentMoniker": "WB4\\Views\\Shared\\Components\\NTVCategory\\Default.cshtml",
+              "ToolTip": "D:\\ASP.NETCORE\\WB4\\WB4\\Views\\Shared\\Components\\NTVCategory\\Default.cshtml",
+              "RelativeToolTip": "WB4\\Views\\Shared\\Components\\NTVCategory\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-10T14:01:14.25Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

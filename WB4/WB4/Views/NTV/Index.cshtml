@@ -1,0 +1,56 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "NTV";
+}
+
+<h1>@ViewData["Title"]</h1>
+<hr/>
+<h2>Cú pháp Razor</h2>
+
+@{
+    var total = 7000;
+    var myMessage = "Biết người là trí, biết bản thân mới là trí tuệ thật sự. " +
+                      "Thắng người là sự mạnh mẽ, thắng bản thân mới là sức mạnh thực sự";
+
+    <p>Tài khoản của bạn đang có: $ @total </p>
+    <p>Câu nói để đời của Lão Tử: @myMessage</p>
+    var greeting = "Chúc bạn thành công!";
+    var weekDay = DateTime.Now.DayOfWeek;
+    var greetingMessage = greeting + " Hôm nay là: " + weekDay;
+}
+<div class="">
+    <h2>
+        cú pháp
+    </h2>
+    <p>@myMessage</p>
+
+</div>
+
+<h2>cấu trúc h2</h2>
+@if(total > 5000)
+{
+    <p>Tài khoản của bạn đang có: $ @total </p>
+}
+else
+{
+    <p>Tài khoản của bạn đang có: $ @total </p>
+}
+
+<h2>
+    cấu trúc lăpj
+</h2>
+
+@{
+    var numbers = new List<int> { 1, 2, 3, 4, 5 };
+    <ul>
+        @foreach (var number in numbers)
+        {
+            <li>@number</li>
+        }
+    </ul>
+}
+
+
+

@@ -1,0 +1,606 @@
+﻿25 matches found: 
+<match path=D:\ASP.NETCORE\WEBDEMO\WEBDEMO\Models\ErrorViewModel.cs>
+    File: `WEBDEMO/WEBDEMO/Models/ErrorViewModel.cs`
+```c#
+namespace WEBDEMO.Models
+{
+    public class ErrorViewModel
+    {
+        public string? RequestId { get; set; }
+
+        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+    }
+}
+
+```
+</match>
+<match path=D:\ASP.NETCORE\WEBDEMO\WEBDEMO\Models\ErrorViewModel.cs>
+    File: `WEBDEMO/WEBDEMO/Models/ErrorViewModel.cs`
+```c#
+namespace WEBDEMO.Models
+{
+    public class ErrorViewModel
+    {
+        public string? RequestId { get; set; }
+
+        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+    }
+}
+
+```
+</match>
+<match path=D:\ASP.NETCORE\WebApplication3\WebApplication3\Views\_ViewImports.cshtml>
+    File: `WebApplication3/WebApplication3/Views/_ViewImports.cshtml`
+```html+razor
+﻿@using WebApplication3
+@using WebApplication3.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+```
+</match>
+<match path=D:\ASP.NETCORE\WebApplication3\WebApplication3\Views\_ViewImports.cshtml>
+    File: `WebApplication3/WebApplication3/Views/_ViewImports.cshtml`
+```html+razor
+﻿@using WebApplication3
+@using WebApplication3.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+```
+</match>
+<match path=D:\ASP.NETCORE\WebApplication2\WebApplication2\Models\ErrorViewModel.cs>
+    File: `WebApplication2/WebApplication2/Models/ErrorViewModel.cs`
+```c#
+namespace WebApplication2.Models
+{
+    public class ErrorViewModel
+    {
+        public string? RequestId { get; set; }
+
+        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+    }
+}
+
+```
+</match>
+<match path=D:\ASP.NETCORE\WebApplication2\WebApplication2\Models\ErrorViewModel.cs>
+    File: `WebApplication2/WebApplication2/Models/ErrorViewModel.cs`
+```c#
+namespace WebApplication2.Models
+{
+    public class ErrorViewModel
+    {
+        public string? RequestId { get; set; }
+
+        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+    }
+}
+
+```
+</match>
+<match path=D:\ASP.NETCORE\WebApplication2\WebApplication2\Views\_ViewImports.cshtml>
+    File: `WebApplication2/WebApplication2/Views/_ViewImports.cshtml`
+```html+razor
+﻿@using WebApplication2
+@using WebApplication2.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+```
+</match>
+<match path=D:\ASP.NETCORE\WebApplication2\WebApplication2\Views\_ViewImports.cshtml>
+    File: `WebApplication2/WebApplication2/Views/_ViewImports.cshtml`
+```html+razor
+﻿@using WebApplication2
+@using WebApplication2.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+```
+</match>
+<match path=D:\ASP.NETCORE\WEBDEMO\WEBDEMO\Views\Home\Index.cshtml>
+    // Lines 46 to 47
+</match>
+<match path=D:\ASP.NETCORE\WEBDEMO\WEBDEMO\Views\Home\Index.cshtml>
+    // Lines 42 to 46
+</match>
+<match path=D:\ASP.NETCORE\WebApplication2\WebApplication2\Controllers\HomeController.cs>
+    File: `WebApplication2/WebApplication2/Controllers/HomeController.cs`
+```c#
+using System.Diagnostics;
+using Microsoft.AspNetCore.Mvc;
+using WebApplication2.Models;
+
+namespace WebApplication2.Controllers
+{
+    public class HomeController : Controller
+    {
+        private readonly ILogger<HomeController> _logger;
+
+        public HomeController(ILogger<HomeController> logger)
+        {
+            _logger = logger;
+        }
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+    }
+}
+
+```
+</match>
+<match path=D:\ASP.NETCORE\WebApplication2\WebApplication2\Controllers\HomeController.cs>
+    File: `WebApplication2/WebApplication2/Controllers/HomeController.cs`
+```c#
+using System.Diagnostics;
+using Microsoft.AspNetCore.Mvc;
+using WebApplication2.Models;
+
+namespace WebApplication2.Controllers
+{
+    public class HomeController : Controller
+    {
+        private readonly ILogger<HomeController> _logger;
+
+        public HomeController(ILogger<HomeController> logger)
+        {
+            _logger = logger;
+        }
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+    }
+}
+
+```
+</match>
+<match path=D:\ASP.NETCORE\WebApplication2\WebApplication2\Program.cs>
+    File: `WebApplication2/WebApplication2/Program.cs`
+```c#
+namespace WebApplication2
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            var builder = WebApplication.CreateBuilder(args);
+
+            // Add services to the container.
+            builder.Services.AddControllersWithViews();
+
+            var app = builder.Build();
+
+            // Configure the HTTP request pipeline.
+            if (!app.Environment.IsDevelopment())
+            {
+                app.UseExceptionHandler("/Home/Error");
+                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                app.UseHsts();
+            }
+
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
+
+            app.UseRouting();
+
+            app.UseAuthorization();
+
+            app.MapControllerRoute(
+                name: "default",
+                pattern: "{controller=Home}/{action=Index}/{id?}");
+
+            app.Run();
+        }
+    }
+}
+
+```
+</match>
+<match path=D:\ASP.NETCORE\WebApplication2\WebApplication2\Program.cs>
+    File: `WebApplication2/WebApplication2/Program.cs`
+```c#
+namespace WebApplication2
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            var builder = WebApplication.CreateBuilder(args);
+
+            // Add services to the container.
+            builder.Services.AddControllersWithViews();
+
+            var app = builder.Build();
+
+            // Configure the HTTP request pipeline.
+            if (!app.Environment.IsDevelopment())
+            {
+                app.UseExceptionHandler("/Home/Error");
+                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                app.UseHsts();
+            }
+
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
+
+            app.UseRouting();
+
+            app.UseAuthorization();
+
+            app.MapControllerRoute(
+                name: "default",
+                pattern: "{controller=Home}/{action=Index}/{id?}");
+
+            app.Run();
+        }
+    }
+}
+
+```
+</match>
+<match path=D:\ASP.NETCORE\WebApplication3\WebApplication3\Controllers\HomeController.cs>
+    File: `WebApplication3/WebApplication3/Controllers/HomeController.cs`
+```c#
+using System.Diagnostics;
+using Microsoft.AspNetCore.Mvc;
+using WebApplication3.Models;
+
+namespace WebApplication3.Controllers
+{
+    public class HomeController : Controller
+    {
+        private readonly ILogger<HomeController> _logger;
+
+        public HomeController(ILogger<HomeController> logger)
+        {
+            _logger = logger;
+        }
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+    }
+}
+
+```
+</match>
+<match path=D:\ASP.NETCORE\WebApplication3\WebApplication3\Controllers\HomeController.cs>
+    File: `WebApplication3/WebApplication3/Controllers/HomeController.cs`
+```c#
+using System.Diagnostics;
+using Microsoft.AspNetCore.Mvc;
+using WebApplication3.Models;
+
+namespace WebApplication3.Controllers
+{
+    public class HomeController : Controller
+    {
+        private readonly ILogger<HomeController> _logger;
+
+        public HomeController(ILogger<HomeController> logger)
+        {
+            _logger = logger;
+        }
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+    }
+}
+
+```
+</match>
+<match path=D:\ASP.NETCORE\WEBDEMO\WEBDEMO\Controllers\HomeController.cs>
+    File: `WEBDEMO/WEBDEMO/Controllers/HomeController.cs`
+```c#
+using System.Diagnostics;
+using Microsoft.AspNetCore.Mvc;
+using WEBDEMO.Models;
+
+namespace WEBDEMO.Controllers
+{
+    public class HomeController : Controller
+    {
+        private readonly ILogger<HomeController> _logger;
+
+        public HomeController(ILogger<HomeController> logger)
+        {
+            _logger = logger;
+        }
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+    }
+}
+
+```
+</match>
+<match path=D:\ASP.NETCORE\WEBDEMO\WEBDEMO\Controllers\HomeController.cs>
+    File: `WEBDEMO/WEBDEMO/Controllers/HomeController.cs`
+```c#
+using System.Diagnostics;
+using Microsoft.AspNetCore.Mvc;
+using WEBDEMO.Models;
+
+namespace WEBDEMO.Controllers
+{
+    public class HomeController : Controller
+    {
+        private readonly ILogger<HomeController> _logger;
+
+        public HomeController(ILogger<HomeController> logger)
+        {
+            _logger = logger;
+        }
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+    }
+}
+
+```
+</match>
+<match path=D:\ASP.NETCORE\WEBDEMO\WEBDEMO\Program.cs>
+    File: `WEBDEMO/WEBDEMO/Program.cs`
+```c#
+namespace WEBDEMO
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            var builder = WebApplication.CreateBuilder(args);
+
+            // Add services to the container.
+            builder.Services.AddControllersWithViews();
+
+            var app = builder.Build();
+
+            // Configure the HTTP request pipeline.
+            if (!app.Environment.IsDevelopment())
+            {
+                app.UseExceptionHandler("/Home/Error");
+                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                app.UseHsts();
+            }
+
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
+
+            app.UseRouting();
+
+            app.UseAuthorization();
+
+            app.MapControllerRoute(
+                name: "default",
+                pattern: "{controller=Home}/{action=Index}/{id?}");
+
+            app.Run();
+        }
+    }
+}
+
+```
+</match>
+<match path=D:\ASP.NETCORE\WEBDEMO\WEBDEMO\Views\Shared\_Layout.cshtml.css>
+    File: `WEBDEMO/WEBDEMO/Views/Shared/_Layout.cshtml.css`
+```css
+﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a {
+  color: #0077cc;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+...
+```
+</match>
+<match path=D:\ASP.NETCORE\WebApplication2\WebApplication2\Views\Shared\_Layout.cshtml.css>
+    File: `WebApplication2/WebApplication2/Views/Shared/_Layout.cshtml.css`
+```css
+﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a {
+  color: #0077cc;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+...
+```
+</match>
+<match path=D:\ASP.NETCORE\WebApplication3\WebApplication3\Controllers\DemoController.cs>
+    File: `WebApplication3/WebApplication3/Controllers/DemoController.cs`
+```c#
+using Microsoft.AspNetCore.Mvc;
+
+namespace WebApplication3.Controllers
+{
+    public class DemoController : Controller
+    {
+        public IActionResult Index()
+        {
+            return View();
+        }
+    }
+}
+
+```
+</match>
+<match path=D:\ASP.NETCORE\WEBDEMO\WEBDEMO\Views\ProductController1\Index.cshtml>
+    // Lines 27 to 43
+</match>
+<match path=D:\ASP.NETCORE\WEBDEMO\WEBDEMO\Views\ProductController1\Index.cshtml>
+    File: `WEBDEMO/WEBDEMO/Views/ProductController1/Index.cshtml`
+```html+razor
+﻿@{
+    ViewData["Title"] = "Quản lý sản phẩm ";
+}
+
+<div class="container my-4">
+    <h2 class="mb-4 fw-normal">@ViewData["Title"]</h2>
+
+    <div class="table-responsive">
+        <table class="table align-middle">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Created At</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dòng 1 -->
+                <tr>
+                    <td>1</td>
+                    <td>Product 1</td>
+                    <td>500,000 đ</td>
+                    <td>25-12-2020</td>
+                    <td>
+...
+```
+</match>
+<match path=D:\ASP.NETCORE\WEBDEMO\WEBDEMO\Views\_ViewStart.cshtml>
+    File: `WEBDEMO/WEBDEMO/Views/_ViewStart.cshtml`
+```html+razor
+﻿@{
+    Layout = "_Layout";
+}
+
+```
+</match>
