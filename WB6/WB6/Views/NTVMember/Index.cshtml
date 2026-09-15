@@ -1,0 +1,55 @@
+@model IEnumerable<WB6.Models.DataModels.NTVMember>
+
+@{
+    ViewData["Title"] = "DS thành viên";
+}
+
+<div class="card">
+<h1>DS thành viên</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NTVUserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NTVEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NTVFullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NTVPassword)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(model => item.NTVUserName)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.NTVEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.NTVFullName)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.NTVPassword)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.NTVMemberId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.NTVMemberId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.NTVMemberId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>

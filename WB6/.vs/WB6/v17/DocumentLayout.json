@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ASP.NETCORE\\WB6\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{450AD784-6C28-4094-BF3E-D97D148F0ABA}|WB6\\WB6.csproj|d:\\asp.netcore\\wb6\\wb6\\views\\ntvmember\\getmember.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{450AD784-6C28-4094-BF3E-D97D148F0ABA}|WB6\\WB6.csproj|solutionrelative:wb6\\views\\ntvmember\\getmember.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{450AD784-6C28-4094-BF3E-D97D148F0ABA}|WB6\\WB6.csproj|d:\\asp.netcore\\wb6\\wb6\\controllers\\ntvmembercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{450AD784-6C28-4094-BF3E-D97D148F0ABA}|WB6\\WB6.csproj|solutionrelative:wb6\\controllers\\ntvmembercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{450AD784-6C28-4094-BF3E-D97D148F0ABA}|WB6\\WB6.csproj|d:\\asp.netcore\\wb6\\wb6\\views\\ntvmember\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{450AD784-6C28-4094-BF3E-D97D148F0ABA}|WB6\\WB6.csproj|solutionrelative:wb6\\views\\ntvmember\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{450AD784-6C28-4094-BF3E-D97D148F0ABA}|WB6\\WB6.csproj|d:\\asp.netcore\\wb6\\wb6\\views\\ntvmember\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{450AD784-6C28-4094-BF3E-D97D148F0ABA}|WB6\\WB6.csproj|solutionrelative:wb6\\views\\ntvmember\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{450AD784-6C28-4094-BF3E-D97D148F0ABA}|WB6\\WB6.csproj|d:\\asp.netcore\\wb6\\wb6\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{450AD784-6C28-4094-BF3E-D97D148F0ABA}|WB6\\WB6.csproj|solutionrelative:wb6\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{450AD784-6C28-4094-BF3E-D97D148F0ABA}|WB6\\WB6.csproj|d:\\asp.netcore\\wb6\\wb6\\models\\datamodels\\ntvmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{450AD784-6C28-4094-BF3E-D97D148F0ABA}|WB6\\WB6.csproj|solutionrelative:wb6\\models\\datamodels\\ntvmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{450AD784-6C28-4094-BF3E-D97D148F0ABA}|WB6\\WB6.csproj|d:\\asp.netcore\\wb6\\wb6\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{450AD784-6C28-4094-BF3E-D97D148F0ABA}|WB6\\WB6.csproj|solutionrelative:wb6\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NTVMemberController.cs",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\WB6\\WB6\\Controllers\\NTVMemberController.cs",
+              "RelativeDocumentMoniker": "WB6\\Controllers\\NTVMemberController.cs",
+              "ToolTip": "D:\\ASP.NETCORE\\WB6\\WB6\\Controllers\\NTVMemberController.cs",
+              "RelativeToolTip": "WB6\\Controllers\\NTVMemberController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAuwFEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T11:57:49.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\WB6\\WB6\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WB6\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\ASP.NETCORE\\WB6\\WB6\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WB6\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAiwCAAAAByAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-15T12:12:16.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetMember.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\WB6\\WB6\\Views\\NTVMember\\GetMember.cshtml",
+              "RelativeDocumentMoniker": "WB6\\Views\\NTVMember\\GetMember.cshtml",
+              "ToolTip": "D:\\ASP.NETCORE\\WB6\\WB6\\Views\\NTVMember\\GetMember.cshtml",
+              "RelativeToolTip": "WB6\\Views\\NTVMember\\GetMember.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-15T12:46:57.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\WB6\\WB6\\Views\\NTVMember\\Index.cshtml",
+              "RelativeDocumentMoniker": "WB6\\Views\\NTVMember\\Index.cshtml",
+              "ToolTip": "D:\\ASP.NETCORE\\WB6\\WB6\\Views\\NTVMember\\Index.cshtml",
+              "RelativeToolTip": "WB6\\Views\\NTVMember\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-15T13:13:40.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\WB6\\WB6\\Views\\NTVMember\\Create.cshtml",
+              "RelativeDocumentMoniker": "WB6\\Views\\NTVMember\\Create.cshtml",
+              "ToolTip": "D:\\ASP.NETCORE\\WB6\\WB6\\Views\\NTVMember\\Create.cshtml",
+              "RelativeToolTip": "WB6\\Views\\NTVMember\\Create.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACkAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-15T13:19:54.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NTVMember.cs",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\WB6\\WB6\\Models\\DataModels\\NTVMember.cs",
+              "RelativeDocumentMoniker": "WB6\\Models\\DataModels\\NTVMember.cs",
+              "ToolTip": "D:\\ASP.NETCORE\\WB6\\WB6\\Models\\DataModels\\NTVMember.cs",
+              "RelativeToolTip": "WB6\\Models\\DataModels\\NTVMember.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T11:56:14.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\WB6\\WB6\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WB6\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\ASP.NETCORE\\WB6\\WB6\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WB6\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T11:57:11.458Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

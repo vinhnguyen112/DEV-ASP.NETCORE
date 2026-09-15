@@ -1,0 +1,47 @@
+@model WB6.Models.DataModels.NTVMember
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="card">
+<h1>Create</h1>
+
+<h4>NTVMember</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="NTVUserName" class="control-label"></label>
+                <input asp-for="NTVUserName" class="form-control" />
+                <span asp-validation-for="NTVUserName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="NTVEmail" class="control-label"></label>
+                <input asp-for="NTVEmail" class="form-control" />
+                <span asp-validation-for="NTVEmail" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="NTVFullName" class="control-label"></label>
+                <input asp-for="NTVFullName" class="form-control" />
+                <span asp-validation-for="NTVFullName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="NTVPassword" class="control-label"></label>
+                <input asp-for="NTVPassword" class="form-control" />
+                <span asp-validation-for="NTVPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+                    <a asp-action="Index" class="btn btn-dark">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
