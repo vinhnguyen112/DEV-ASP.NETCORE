@@ -1,0 +1,61 @@
+@model Lap04.Models.Product
+
+@{
+    ViewData["Title"] = "Xóa sản phẩm";
+}
+
+<h1>Xóa sản phẩm</h1>
+
+<h3 class="text-danger">Bạn có chắc chắn muốn xóa sản phẩm này?</h3>
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="row">
+
+        <dt class="col-sm-3">@Html.DisplayNameFor(m => m.Name)</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(m => m.Name)</dd>
+
+        <dt class="col-sm-3">@Html.DisplayNameFor(m => m.Price)</dt>
+        <dd class="col-sm-9">@Model.Price.ToString("N0") ₫</dd>
+
+        <dt class="col-sm-3">@Html.DisplayNameFor(m => m.SalePrice)</dt>
+        <dd class="col-sm-9">@Model.SalePrice.ToString("N0") ₫</dd>
+
+        <dt class="col-sm-3">@Html.DisplayNameFor(m => m.CategoryId)</dt>
+        <dd class="col-sm-9">@ViewBag.CategoryName</dd>
+
+        <dt class="col-sm-3">@Html.DisplayNameFor(m => m.Status)</dt>
+        <dd class="col-sm-9">
+            @if (Model.Status == 1)
+            {
+                <span class="badge bg-success">Đang bán</span>
+            }
+            else
+            {
+                <span class="badge bg-secondary">Ngừng bán</span>
+            }
+        </dd>
+
+        <dt class="col-sm-3">@Html.DisplayNameFor(m => m.CreatedDate)</dt>
+        <dd class="col-sm-9">@Model.CreatedDate.ToString("dd/MM/yyyy")</dd>
+
+        <dt class="col-sm-3">@Html.DisplayNameFor(m => m.Image)</dt>
+        <dd class="col-sm-9">
+            @{
+                var imgSrc = !string.IsNullOrEmpty(Model.Image) ? Model.Image : "/images/products/default.png";
+            }
+            <img src="@Url.Content(imgSrc)" alt="@Model.Name"
+                 style="width:100px;height:100px;object-fit:cover;border-radius:8px;border:1px solid #dee2e6;" />
+        </dd>
+
+        <dt class="col-sm-3">@Html.DisplayNameFor(m => m.Description)</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(m => m.Description)</dd>
+
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Xóa" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-secondary ms-2">Hủy</a>
+    </form>
+</div>

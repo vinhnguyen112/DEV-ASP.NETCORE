@@ -1,0 +1,68 @@
+D:\ASP.NETCORE\Lap04\Lap04\bin\Debug\net8.0\appsettings.Development.json
+D:\ASP.NETCORE\Lap04\Lap04\bin\Debug\net8.0\appsettings.json
+D:\ASP.NETCORE\Lap04\Lap04\bin\Debug\net8.0\Lap04.staticwebassets.runtime.json
+D:\ASP.NETCORE\Lap04\Lap04\bin\Debug\net8.0\Lap04.staticwebassets.endpoints.json
+D:\ASP.NETCORE\Lap04\Lap04\bin\Debug\net8.0\Lap04.exe
+D:\ASP.NETCORE\Lap04\Lap04\bin\Debug\net8.0\Lap04.deps.json
+D:\ASP.NETCORE\Lap04\Lap04\bin\Debug\net8.0\Lap04.runtimeconfig.json
+D:\ASP.NETCORE\Lap04\Lap04\bin\Debug\net8.0\Lap04.dll
+D:\ASP.NETCORE\Lap04\Lap04\bin\Debug\net8.0\Lap04.pdb
+D:\ASP.NETCORE\Lap04\Lap04\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\ASP.NETCORE\Lap04\Lap04\obj\Debug\net8.0\Lap04.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP.NETCORE\Lap04\Lap04\obj\Debug\net8.0\Lap04.AssemblyInfoInputs.cache
+D:\ASP.NETCORE\Lap04\Lap04\obj\Debug\net8.0\Lap04.AssemblyInfo.cs
+D:\ASP.NETCORE\Lap04\Lap04\obj\Debug\net8.0\Lap04.csproj.CoreCompileInputs.cache
+D:\ASP.NETCORE\Lap04\Lap04\obj\Debug\net8.0\Lap04.MvcApplicationPartsAssemblyInfo.cache
+D:\ASP.NETCORE\Lap04\Lap04\obj\Debug\net8.0\Lap04.RazorAssemblyInfo.cache
+D:\ASP.NETCORE\Lap04\Lap04\obj\Debug\net8.0\Lap04.RazorAssemblyInfo.cs
+D:\ASP.NETCORE\Lap04\Lap04\obj\Debug\net8.0\Lap04.sourcelink.json
+D:\ASP.NETCORE\Lap04\Lap04\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\ASP.NETCORE\Lap04\Lap04\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\ASP.NETCORE\Lap04\Lap04\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\ASP.NETCORE\Lap04\Lap04\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\ASP.NETCORE\Lap04\Lap04\obj\Debug\net8.0\scopedcss\bundle\Lap04.styles.css
+D:\ASP.NETCORE\Lap04\Lap04\obj\Debug\net8.0\scopedcss\projectbundle\Lap04.bundle.scp.css
+D:\ASP.NETCORE\Lap04\Lap04\obj\Debug\net8.0\staticwebassets.build.json
+D:\ASP.NETCORE\Lap04\Lap04\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\ASP.NETCORE\Lap04\Lap04\obj\Debug\net8.0\staticwebassets.development.json
+D:\ASP.NETCORE\Lap04\Lap04\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\ASP.NETCORE\Lap04\Lap04\obj\Debug\net8.0\Lap04.dll
+D:\ASP.NETCORE\Lap04\Lap04\obj\Debug\net8.0\refint\Lap04.dll
+D:\ASP.NETCORE\Lap04\Lap04\obj\Debug\net8.0\Lap04.pdb
+D:\ASP.NETCORE\Lap04\Lap04\obj\Debug\net8.0\Lap04.genruntimeconfig.cache
+D:\ASP.NETCORE\Lap04\Lap04\obj\Debug\net8.0\ref\Lap04.dll
+D:\ASP.NETCORE\Lap04\Lap04\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\bin\Debug\net8.0\appsettings.Development.json
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\bin\Debug\net8.0\appsettings.json
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\bin\Debug\net8.0\Lap04.staticwebassets.runtime.json
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\bin\Debug\net8.0\Lap04.staticwebassets.endpoints.json
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\bin\Debug\net8.0\Lap04.exe
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\bin\Debug\net8.0\Lap04.deps.json
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\bin\Debug\net8.0\Lap04.runtimeconfig.json
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\bin\Debug\net8.0\Lap04.dll
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\bin\Debug\net8.0\Lap04.pdb
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\obj\Debug\net8.0\rpswa.dswa.cache.json
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\obj\Debug\net8.0\Lap04.GeneratedMSBuildEditorConfig.editorconfig
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\obj\Debug\net8.0\Lap04.AssemblyInfoInputs.cache
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\obj\Debug\net8.0\Lap04.AssemblyInfo.cs
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\obj\Debug\net8.0\Lap04.csproj.CoreCompileInputs.cache
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\obj\Debug\net8.0\Lap04.MvcApplicationPartsAssemblyInfo.cache
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\obj\Debug\net8.0\Lap04.RazorAssemblyInfo.cache
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\obj\Debug\net8.0\Lap04.RazorAssemblyInfo.cs
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\obj\Debug\net8.0\Lap04.sourcelink.json
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\obj\Debug\net8.0\rjimswa.dswa.cache.json
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\obj\Debug\net8.0\scopedcss\bundle\Lap04.styles.css
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\obj\Debug\net8.0\scopedcss\projectbundle\Lap04.bundle.scp.css
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\obj\Debug\net8.0\staticwebassets.build.json
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\obj\Debug\net8.0\staticwebassets.build.json.cache
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\obj\Debug\net8.0\staticwebassets.development.json
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\obj\Debug\net8.0\Lap04.dll
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\obj\Debug\net8.0\refint\Lap04.dll
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\obj\Debug\net8.0\Lap04.pdb
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\obj\Debug\net8.0\Lap04.genruntimeconfig.cache
+d:\ASP.NETCORE\Lap04 - Copy\Lap04\obj\Debug\net8.0\ref\Lap04.dll
+D:\ASP.NETCORE\Lap04 - Copy\Lap04\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

@@ -1,0 +1,104 @@
+@model Lap04.Models.People
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>People</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label"></label>
+                <input asp-for="Phone" class="form-control" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Avatar" class="control-label"></label>
+                <input type="file" name="AvatarFile" id="AvatarFile" class="form-control" accept="image/*" onchange="previewImage(event)" />
+                <span asp-validation-for="Avatar" class="text-danger"></span>
+                <div class="mt-2">
+                    <img id="previewAvatar" src="#" alt="Preview Avatar" style="display: none; width: 80px; height: 80px; object-fit: cover; border-radius: 50%; border: 1px solid #ccc;" />
+                </div>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Brithday" class="control-label"></label>
+                <input asp-for="Brithday" type="date" class="form-control" />
+                <span asp-validation-for="Brithday" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Bio" class="control-label"></label>
+                <input asp-for="Bio" class="form-control" />
+                <span asp-validation-for="Bio" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Gender" class="control-label d-block"></label>
+                <div class="form-check form-check-inline">
+                    <input asp-for="Gender" id="gCty" class="form-check-input" type="radio" value="0" />
+                    <label class="form-check-label" for="gCty">Cty</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input asp-for="Gender" id="gMale" class="form-check-input" type="radio" value="1" />
+                    <label class="form-check-label" for="gMale">Nam</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input asp-for="Gender" id="gFemale" class="form-check-input" type="radio" value="2" />
+                    <label class="form-check-label" for="gFemale">Nữ</label>
+                </div>
+                <span asp-validation-for="Gender" class="text-danger d-block"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        function previewImage(event) {
+            var input = event.target;
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    var preview = document.getElementById('previewAvatar');
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+}
