@@ -3,9 +3,10 @@
     "",
     "\\Lap04",
     "\\Lap04\\Controllers",
+    "\\Lap04\\Models",
     "\\Lap04\\wwwroot",
     "\\Lap04\\wwwroot\\images"
   ],
-  "SelectedNode": "\\Lap04\\Controllers\\ProductController.cs",
+  "SelectedNode": "\\Lap04.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -1,46 +1,70 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\ASP.NETCORE\\Lap04 - Copy\\",
+  "WorkspaceRootPath": "D:\\ASP.NETCORE\\Lap04\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04 - copy\\lap04\\models\\datalocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04\\lap04\\models\\datalocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|solutionrelative:lap04\\models\\datalocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04 - copy\\lap04\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04\\lap04\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|solutionrelative:lap04\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04\\lap04\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|solutionrelative:lap04\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04\\lap04\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|solutionrelative:lap04\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04 - copy\\lap04\\controllers\\peoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04\\lap04\\controllers\\peoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|solutionrelative:lap04\\controllers\\peoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04 - copy\\lap04\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04\\lap04\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|solutionrelative:lap04\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04 - copy\\lap04\\views\\people\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|solutionrelative:lap04\\views\\people\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04\\lap04\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|solutionrelative:lap04\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04 - copy\\lap04\\models\\people.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|solutionrelative:lap04\\models\\people.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04\\lap04\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|solutionrelative:lap04\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04 - copy\\lap04\\views\\people\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|solutionrelative:lap04\\views\\people\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04\\lap04\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|solutionrelative:lap04\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04 - copy\\lap04\\views\\people\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04\\lap04\\views\\people\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|solutionrelative:lap04\\views\\people\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04 - copy\\lap04\\views\\people\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04\\lap04\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|solutionrelative:lap04\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04\\lap04\\models\\people.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|solutionrelative:lap04\\models\\people.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04\\lap04\\views\\people\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|solutionrelative:lap04\\views\\people\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04 - copy\\lap04\\views\\people\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04\\lap04\\views\\people\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|solutionrelative:lap04\\views\\people\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04\\lap04\\views\\people\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|solutionrelative:lap04\\views\\people\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|d:\\asp.netcore\\lap04\\lap04\\views\\people\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D1EA7E75-825A-4007-91AF-C76ACC992E7F}|Lap04\\Lap04.csproj|solutionrelative:lap04\\views\\people\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,39 +74,160 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04 - Copy\\Lap04\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "Lap04\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\ASP.NETCORE\\Lap04 - Copy\\Lap04\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "Lap04\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA7AAAAAAAAAA==",
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Lap04\\Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Lap04\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T09:12:58.651Z"
+              "WhenOpened": "2026-09-17T11:44:24.906Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04 - Copy\\Lap04\\Views\\People\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Lap04\\Views\\People\\Edit.cshtml",
-              "ToolTip": "D:\\ASP.NETCORE\\Lap04 - Copy\\Lap04\\Views\\People\\Edit.cshtml",
-              "RelativeToolTip": "Lap04\\Views\\People\\Edit.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Lap04\\Models\\Category.cs",
+              "ToolTip": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Models\\Category.cs",
+              "RelativeToolTip": "Lap04\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T11:44:23.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataLocal.cs",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Models\\DataLocal.cs",
+              "RelativeDocumentMoniker": "Lap04\\Models\\DataLocal.cs",
+              "ToolTip": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Models\\DataLocal.cs",
+              "RelativeToolTip": "Lap04\\Models\\DataLocal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T07:26:24.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PeopleController.cs",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Controllers\\PeopleController.cs",
+              "RelativeDocumentMoniker": "Lap04\\Controllers\\PeopleController.cs",
+              "ToolTip": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Controllers\\PeopleController.cs",
+              "RelativeToolTip": "Lap04\\Controllers\\PeopleController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T11:43:56.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Lap04\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Lap04\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T11:43:57.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Lap04\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Lap04\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T09:12:59.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Program.cs",
+              "RelativeDocumentMoniker": "Lap04\\Program.cs",
+              "ToolTip": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Program.cs",
+              "RelativeToolTip": "Lap04\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T11:44:16.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Lap04\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Lap04\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-16T08:50:58.215Z"
+              "WhenOpened": "2026-09-17T11:44:11.452Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Lap04\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Lap04\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-17T11:44:08.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Lap04\\Models\\Product.cs",
+              "ToolTip": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Models\\Product.cs",
+              "RelativeToolTip": "Lap04\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T11:43:52.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Views\\People\\Index.cshtml",
+              "RelativeDocumentMoniker": "Lap04\\Views\\People\\Index.cshtml",
+              "ToolTip": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Views\\People\\Index.cshtml",
+              "RelativeToolTip": "Lap04\\Views\\People\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-16T07:58:27.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "People.cs",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Models\\People.cs",
+              "RelativeDocumentMoniker": "Lap04\\Models\\People.cs",
+              "ToolTip": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Models\\People.cs",
+              "RelativeToolTip": "Lap04\\Models\\People.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T07:19:55.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04 - Copy\\Lap04\\Views\\People\\Create.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Views\\People\\Create.cshtml",
               "RelativeDocumentMoniker": "Lap04\\Views\\People\\Create.cshtml",
-              "ToolTip": "D:\\ASP.NETCORE\\Lap04 - Copy\\Lap04\\Views\\People\\Create.cshtml",
+              "ToolTip": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Views\\People\\Create.cshtml",
               "RelativeToolTip": "Lap04\\Views\\People\\Create.cshtml",
               "ViewState": "AgIAAEsAAAAAAAAAAAAAAGcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -90,35 +235,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04 - Copy\\Lap04\\Views\\People\\Index.cshtml",
-              "RelativeDocumentMoniker": "Lap04\\Views\\People\\Index.cshtml",
-              "ToolTip": "D:\\ASP.NETCORE\\Lap04 - Copy\\Lap04\\Views\\People\\Index.cshtml",
-              "RelativeToolTip": "Lap04\\Views\\People\\Index.cshtml",
-              "ViewState": "AgIAACYAAAAAAAAAAAAYwDcAAAARAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Views\\People\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Lap04\\Views\\People\\Edit.cshtml",
+              "ToolTip": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Views\\People\\Edit.cshtml",
+              "RelativeToolTip": "Lap04\\Views\\People\\Edit.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-16T07:58:27.474Z"
+              "WhenOpened": "2026-09-16T08:50:58.215Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PeopleController.cs",
-              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04 - Copy\\Lap04\\Controllers\\PeopleController.cs",
-              "RelativeDocumentMoniker": "Lap04\\Controllers\\PeopleController.cs",
-              "ToolTip": "D:\\ASP.NETCORE\\Lap04 - Copy\\Lap04\\Controllers\\PeopleController.cs",
-              "RelativeToolTip": "Lap04\\Controllers\\PeopleController.cs",
-              "ViewState": "AgIAAIYAAAAAAAAAAAAcwIcAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T07:56:27.755Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04 - Copy\\Lap04\\Views\\People\\Delete.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Views\\People\\Delete.cshtml",
               "RelativeDocumentMoniker": "Lap04\\Views\\People\\Delete.cshtml",
-              "ToolTip": "D:\\ASP.NETCORE\\Lap04 - Copy\\Lap04\\Views\\People\\Delete.cshtml",
+              "ToolTip": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Views\\People\\Delete.cshtml",
               "RelativeToolTip": "Lap04\\Views\\People\\Delete.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -126,52 +259,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "People.cs",
-              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04 - Copy\\Lap04\\Models\\People.cs",
-              "RelativeDocumentMoniker": "Lap04\\Models\\People.cs",
-              "ToolTip": "D:\\ASP.NETCORE\\Lap04 - Copy\\Lap04\\Models\\People.cs",
-              "RelativeToolTip": "Lap04\\Models\\People.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAA0wBUAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T07:19:55.033Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 15,
               "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04 - Copy\\Lap04\\Views\\People\\Details.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Views\\People\\Details.cshtml",
               "RelativeDocumentMoniker": "Lap04\\Views\\People\\Details.cshtml",
-              "ToolTip": "D:\\ASP.NETCORE\\Lap04 - Copy\\Lap04\\Views\\People\\Details.cshtml",
+              "ToolTip": "D:\\ASP.NETCORE\\Lap04\\Lap04\\Views\\People\\Details.cshtml",
               "RelativeToolTip": "Lap04\\Views\\People\\Details.cshtml",
               "ViewState": "AgIAAEAAAAAAAAAAAAAgwEYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-09-16T08:20:18.761Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DataLocal.cs",
-              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04 - Copy\\Lap04\\Models\\DataLocal.cs",
-              "RelativeDocumentMoniker": "Lap04\\Models\\DataLocal.cs",
-              "ToolTip": "D:\\ASP.NETCORE\\Lap04 - Copy\\Lap04\\Models\\DataLocal.cs",
-              "RelativeToolTip": "Lap04\\Models\\DataLocal.cs",
-              "ViewState": "AgIAAKwAAAAAAAAAAAAuwAMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T07:26:24.226Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\ASP.NETCORE\\Lap04 - Copy\\Lap04\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Lap04\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\ASP.NETCORE\\Lap04 - Copy\\Lap04\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Lap04\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T09:12:59.827Z"
             }
           ]
         }
