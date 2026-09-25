@@ -1,0 +1,86 @@
+﻿@model Lap06_BT.Models.Product
+
+@{
+    ViewData["Title"] = "Thêm mới sản phẩm";
+}
+
+<div class="container mt-4">
+    <h2>Create</h2>
+    <h4>Product</h4>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-6">
+            <!-- BẮT BUỘC: Thêm thuộc tính enctype="multipart/form-data" ở dòng dưới để gửi file -->
+            <form asp-action="Create" method="post" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Name" class="control-label fw-bold">Name</label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <!-- ĐÃ ĐỔI THÀNH Ô CHỌN FILE ĐỂ UPLOAD ẢNH -->
+                <div class="form-group mb-3">
+                    <label asp-for="ImageFile" class="control-label fw-bold">Hình ảnh sản phẩm</label>
+                    <input asp-for="ImageFile" type="file" class="form-control" accept="image/*" />
+                    <span asp-validation-for="ImageFile" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Price" class="control-label fw-bold">Price</label>
+                    <input asp-for="Price" type="number" class="form-control" />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="SalePrice" class="control-label fw-bold">SalePrice</label>
+                    <input asp-for="SalePrice" type="number" class="form-control" />
+                    <span asp-validation-for="SalePrice" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Status" class="control-label fw-bold">Status</label>
+                    <input asp-for="Status" type="number" class="form-control" value="1" />
+                    <span asp-validation-for="Status" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Descriptions" class="control-label fw-bold">Descriptions</label>
+                    <textarea asp-for="Descriptions" class="form-control" rows="3"></textarea>
+                    <span asp-validation-for="Descriptions" class="text-danger"></span>
+                </div>
+
+                <!-- ĐÃ ĐỔI THÀNH Ô THẢ XUỐNG (DROPDOWN) CHỌN TÊN DANH MỤC TỰ ĐỘNG -->
+                <div class="form-group mb-3">
+                    <label asp-for="CategoryId" class="control-label fw-bold">Category</label>
+                    <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId">
+                        <option value="">-- Chọn danh mục sản phẩm --</option>
+                    </select>
+                    <span asp-validation-for="CategoryId" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="CreatedDate" class="control-label fw-bold">CreatedDate</label>
+                    <input asp-for="CreatedDate" type="date" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                    <span asp-validation-for="CreatedDate" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

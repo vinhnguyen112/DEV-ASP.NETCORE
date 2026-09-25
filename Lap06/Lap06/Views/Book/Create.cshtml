@@ -1,0 +1,86 @@
+﻿@model Lap06.Models.DBModel.Book
+
+@{
+    ViewData["Title"] = "Thêm Sách Mới";
+}
+
+<div class="container mt-4" style="max-width: 600px;">
+    <div class="card shadow">
+        <div class="card-header bg-success text-white">
+            <h3 class="m-0">➕ Thêm Sách Mới</h3>
+        </div>
+        <div class="card-body">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                <!-- 💡 QUAN TRỌNG: Ô nhập Mã sách bắt buộc phải có -->
+                <div class="mb-3">
+                    <label asp-for="BookId" class="form-label fw-bold">Mã sách (Ví dụ: B03, B04)</label>
+                    <input asp-for="BookId" class="form-control" required />
+                    <span asp-validation-for="BookId" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Title" class="form-label fw-bold">Tên sách</label>
+                    <input asp-for="Title" class="form-control" required />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Author" class="form-label">Tác giả</label>
+                    <input asp-for="Author" class="form-control" />
+                    <span asp-validation-for="Author" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Release" class="form-label">Năm xuất bản</label>
+                    <input asp-for="Release" type="number" class="form-control" />
+                    <span asp-validation-for="Release" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Price" class="form-label fw-bold">Giá bán</label>
+                    <input asp-for="Price" type="number" step="any" class="form-control" />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Description" class="form-label">Mô tả</label>
+                    <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Picture" class="form-label">Tên file ảnh (Ví dụ: b3.jpg)</label>
+                    <input asp-for="Picture" class="form-control" />
+                    <span asp-validation-for="Picture" class="text-danger"></span>
+                </div>
+
+                <!-- 💡 CHỈ GIỮ LẠI 2 ô nhập ID số để liên kết bảng cha -->
+                <div class="row">
+                    <div class="col-6 mb-3">
+                        <label asp-for="PublisherId" class="form-label">Mã nhà xuất bản (Nhập số 1 hoặc 2)</label>
+                        <input asp-for="PublisherId" type="number" class="form-control" required />
+                        <span asp-validation-for="PublisherId" class="text-danger"></span>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <label asp-for="CategoryId" class="form-label">Mã thể loại (Nhập số 1 hoặc 2)</label>
+                        <input asp-for="CategoryId" type="number" class="form-control" required />
+                        <span asp-validation-for="CategoryId" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <!-- ❌ ĐÃ XÓA BỎ các ô nhập rác Category, Publisher, OrderDetails gây đơ nút bấm -->
+
+                <div class="d-flex justify-content-between mt-4">
+                    <a asp-action="Index" class="btn btn-secondary">⬅️ Quay lại danh sách</a>
+                    <button type="submit" class="btn btn-success fw-bold">💾 Tạo mới sách</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

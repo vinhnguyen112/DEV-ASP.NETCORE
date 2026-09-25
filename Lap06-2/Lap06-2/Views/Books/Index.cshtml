@@ -1,0 +1,91 @@
+﻿@model IEnumerable<Lap06.Models.DBModel.Book>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Author)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Release)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Picture)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PublisherId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Publisher)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(model => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.Author)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.Release)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.Picture)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.PublisherId)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.CategoryId)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.Category)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.Publisher)
+            </td>
+                <td>
+                    <!-- Thêm chính xác thuộc tính asp-controller="Books" vào các thẻ <a> -->
+                    <a asp-controller="Books" asp-action="Edit" asp-route-id="@item.BookId" class="btn btn-sm btn-warning">Sửa</a> |
+                    <a asp-controller="Books" asp-action="Details" asp-route-id="@item.BookId" class="btn btn-sm btn-info">Chi tiết</a> |
+                    <a asp-controller="Books" asp-action="Delete" asp-route-id="@item.BookId" class="btn btn-sm btn-danger">Xóa</a>
+                </td>
+
+        </tr>
+}
+    </tbody>
+</table>

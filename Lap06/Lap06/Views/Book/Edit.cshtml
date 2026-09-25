@@ -1,0 +1,86 @@
+﻿@model Lap06.Models.DBModel.Book
+
+@{
+    ViewData["Title"] = "Chỉnh sửa Sách";
+}
+
+<div class="container mt-4" style="max-width: 600px;">
+    <div class="card shadow">
+        <div class="card-header bg-warning text-dark">
+            <h3 class="m-0">📝 Chỉnh sửa thông tin Sách</h3>
+        </div>
+        <div class="card-body">
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                <!-- Khóa chính ẩn để định danh bản ghi cần sửa -->
+                <input type="hidden" asp-for="BookId" />
+
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Mã Sách (Không được sửa)</label>
+                    <input class="form-control bg-light" value="@Model.BookId" disabled />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Title" class="form-label fw-bold">Tên Sách</label>
+                    <input asp-for="Title" class="form-control" required />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Author" class="form-label">Tác Giả</label>
+                    <input asp-for="Author" class="form-control" />
+                    <span asp-validation-for="Author" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Release" class="form-label">Năm Xuất Bản</label>
+                    <input asp-for="Release" type="number" class="form-control" />
+                    <span asp-validation-for="Release" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Price" class="form-label fw-bold">Giá Bán</label>
+                    <input asp-for="Price" type="number" step="any" class="form-control" />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Description" class="form-label">Mô Tả</label>
+                    <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Picture" class="form-label">Tên file ảnh (Link ảnh)</label>
+                    <input asp-for="Picture" class="form-control" />
+                    <span asp-validation-for="Picture" class="text-danger"></span>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 mb-3">
+                        <label asp-for="PublisherId" class="form-label">Mã Nhà Xuất Bản</label>
+                        <input asp-for="PublisherId" type="number" class="form-control" />
+                        <span asp-validation-for="PublisherId" class="text-danger"></span>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <label asp-for="CategoryId" class="form-label">Mã Thể Loại</label>
+                        <input asp-for="CategoryId" type="number" class="form-control" />
+                        <span asp-validation-for="CategoryId" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between mt-4">
+                    <a asp-action="Index" class="btn btn-secondary">⬅️ Quay lại danh sách</a>
+                    <button type="submit" class="btn btn-warning fw-bold text-dark">💾 Lưu thay đổi</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

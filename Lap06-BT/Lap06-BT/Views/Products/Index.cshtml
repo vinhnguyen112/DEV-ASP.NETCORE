@@ -1,0 +1,77 @@
+﻿@model IEnumerable<Lap06_BT.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2>Danh sách sản phẩm</h2>
+        <a asp-action="Create" class="btn btn-primary">Thêm mới sản phẩm</a>
+    </div>
+
+    <table class="table table-bordered table-striped align-middle">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th style="width: 100px;">Hình ảnh</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá gốc</th>
+                <th>Giá bán</th>
+                <th>Danh mục</th>
+                <th>Trạng thái</th>
+                <th class="text-center">Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td class="text-center">
+                            @if (!string.IsNullOrEmpty(item.Image))
+                            {
+                                <!-- Hiển thị ảnh thực tế từ thư mục wwwroot/images -->
+                                <img src="~/images/@item.Image" class="img-thumbnail" style="max-width: 80px; max-height: 80px; object-fit: cover;" alt="@item.Name" />
+                            }
+                            else
+                            {
+                                <!-- Hiển thị ảnh mặc định nếu sản phẩm chưa có ảnh -->
+                                <img src="~/images/default-image.png" class="img-thumbnail" style="max-width: 80px; max-height: 80px; object-fit: cover;" alt="No Image" />
+                            }
+                        </td>
+                        <td class="fw-bold">@item.Name</td>
+                        <td>@item.Price.ToString("N0") đ</td>
+                        <td class="text-danger fw-bold">@item.SalePrice.ToString("N0") đ</td>
+                        <td>
+                            <!-- Hiển thị tên danh mục nhờ lệnh .Include(p => p.Category) trong Controller -->
+                            @(item.Category != null ? item.Category.Name : "Không có")
+                        </td>
+                        <td>
+                            @if (item.Status == 1)
+                            {
+                                <span class="badge bg-success">Còn hàng</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-danger">Hết hàng</span>
+                            }
+                        </td>
+                        <td class="text-center">
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Sửa</a> |
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm text-white">Chi tiết</a> |
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Xóa</a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="8" class="text-center text-muted">Chưa có sản phẩm nào. Hãy bấm nút thêm mới!</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

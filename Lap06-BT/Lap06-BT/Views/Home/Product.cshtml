@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Lap06_BT.Models.Product>
+
+@{
+    ViewData["Title"] = "Danh sách sản phẩm dạng lưới";
+}
+
+<div class="container mt-4">
+    <h3 class="mb-4 text-secondary text-center fw-bold">Danh sách sản phẩm</h3>
+
+    <!-- Vòng lặp chia lưới 4 cột song song -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+        @if (Model != null && Model.Any())
+        {
+            foreach (var item in Model)
+            {
+                <div class="col">
+                    <div class="card h-100 text-center shadow-sm">
+                        <div class="p-3 d-flex align-items-center justify-content-center" style="height: 200px;">
+                            @if (!string.IsNullOrEmpty(item.Image))
+                            {
+                                <img src="~/images/@item.Image" class="img-fluid" style="max-height: 100%; object-fit: contain;" alt="@item.Name" />
+                            }
+                            else
+                            {
+                                <img src="~/images/default-image.png" class="img-fluid" style="max-height: 100%; object-fit: contain;" alt="No Image" />
+                            }
+                        </div>
+                        <div class="card-footer bg-white border-top-0">
+                            <h6 class="card-title text-muted mb-1">@item.Name</h6>
+                            <p class="text-danger fw-bold text-center small m-0">@item.Price.ToString("N0") đ</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="col-12 text-center text-muted">
+                <p>Chưa có sản phẩm nào trong cơ sở dữ liệu để hiển thị.</p>
+            </div>
+        }
+    </div>
+</div>

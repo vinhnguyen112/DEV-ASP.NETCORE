@@ -1,0 +1,95 @@
+﻿@model Lap06_BT.Models.Product
+
+@{
+    ViewData["Title"] = "Chỉnh sửa sản phẩm";
+}
+
+<div class="container mt-4">
+    <h2>Chỉnh sửa sản phẩm</h2>
+    <h4>@Model.Name</h4>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-6">
+            <!-- BẮT BUỘC phải có thuộc tính enctype="multipart/form-data" để upload tệp -->
+            <form asp-action="Edit" method="post" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+
+                <!-- GIỮ LẠI TÊN ẢNH CŨ: Dòng này cực kỳ quan trọng, giúp giữ lại tên ảnh cũ nếu người dùng không chọn ảnh mới -->
+                <input type="hidden" asp-for="Image" />
+
+                <div class="form-group mb-3">
+                    <label asp-for="Name" class="control-label fw-bold">Tên sản phẩm</label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <!-- KHU VỰC XỬ LÝ HÌNH ẢNH -->
+                <div class="form-group mb-3">
+                    <label class="control-label fw-bold d-block mb-2">Hình ảnh hiện tại</label>
+                    @if (!string.IsNullOrEmpty(Model.Image))
+                    {
+                        <div class="mb-2">
+                            <img src="~/images/@Model.Image" class="img-thumbnail" style="max-width: 150px; max-height: 150px; object-fit: cover;" alt="Current Image" />
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="mb-2">
+                            <img src="~/images/default-image.png" class="img-thumbnail" style="max-width: 150px; max-height: 150px; object-fit: cover;" alt="No Image" />
+                        </div>
+                    }
+
+                    <label asp-for="ImageFile" class="control-label fw-bold mt-2">Thay đổi hình ảnh mới (Nếu có)</label>
+                    <input asp-for="ImageFile" type="file" class="form-control" accept="image/*" />
+                    <span asp-validation-for="ImageFile" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Price" class="control-label fw-bold">Giá gốc</label>
+                    <input asp-for="Price" class="form-control" />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="SalePrice" class="control-label fw-bold">Giá bán</label>
+                    <input asp-for="SalePrice" class="form-control" />
+                    <span asp-validation-for="SalePrice" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Status" class="control-label fw-bold">Trạng thái (1: Còn hàng, 0: Hết hàng)</label>
+                    <input asp-for="Status" type="number" class="form-control" />
+                    <span asp-validation-for="Status" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Descriptions" class="control-label fw-bold">Mô tả sản phẩm</label>
+                    <textarea asp-for="Descriptions" class="form-control" rows="3"></textarea>
+                    <span asp-validation-for="Descriptions" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="CategoryId" class="control-label fw-bold">Danh mục</label>
+                    <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
+                    <span asp-validation-for="CategoryId" class="text-danger"></span>
+                </div>
+
+                <!-- Thêm thuộc tính ẩn cho CreatedDate để giữ lại ngày tạo gốc -->
+                <input type="hidden" asp-for="CreatedDate" />
+
+                <div class="form-group mb-3">
+                    <button type="submit" class="btn btn-success">Cập nhật sản phẩm</button>
+                    <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

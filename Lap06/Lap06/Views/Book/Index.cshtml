@@ -1,0 +1,82 @@
+﻿@model IEnumerable<Lap06.Models.DBModel.Book>
+
+@{
+    ViewData["Title"] = "Danh sách Sách Đầy Đủ";
+}
+
+<div class="container-fluid mt-4 px-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="text-primary m-0">📚 Quản lý Danh sách Sách (Đầy đủ thông tin)</h1>
+        <a asp-action="Create" class="btn btn-success fw-bold">➕ Thêm sách mới</a>
+    </div>
+
+    <div class="table-responsive shadow-sm rounded">
+        <table class="table table-bordered table-striped table-hover align-middle mb-0">
+            <thead class="table-dark text-nowrap">
+                <tr>
+                    <th>Mã sách</th>
+                    <th>Tên sách</th>
+                    <th>Tác giả</th>
+                    <th>Năm XB</th>
+                    <th>Giá bán</th>
+                    <th>Mô tả</th>
+                    <th>Hình ảnh</th>
+                    <th>Nhà xuất bản</th>
+                    <th>Thể loại</th>
+                    <th style="min-width: 160px;" class="text-center">Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="fw-bold text-secondary">@item.BookId</td>
+                            <td class="fw-bold text-dark">@item.Title</td>
+                            <td>@(string.IsNullOrEmpty(item.Author) ? "---" : item.Author)</td>
+                            <td class="text-center">@item.Release</td>
+                            <td class="text-danger fw-bold text-nowrap">@string.Format("{0:N0} đ", item.Price)</td>
+                            <td class="text-truncate" style="max-width: 200px;" title="@item.Description">
+                                @(string.IsNullOrEmpty(item.Description) ? "---" : item.Description)
+                            </td>
+                            <td class="text-center">
+                                @if (!string.IsNullOrEmpty(item.Picture))
+                                {
+                                    <span class="badge bg-light text-dark border">@item.Picture</span>
+                                }
+                                else
+                                {
+                                    <span class="text-muted">---</span>
+                                }
+                            </td>
+                            <!-- Hiển thị Tên nhà xuất bản thay vì ID -->
+                            <td class="fw-bold text-info">
+                                @(item.Publisher != null ? item.Publisher.PublisherName : "Chưa phân loại")
+                            </td>
+                            <!-- Hiển thị Tên thể loại thay vì ID -->
+                            <td class="fw-bold text-success">
+                                @(item.Category != null ? item.Category.CategoryName : "Chưa phân loại")
+                            </td>
+                            <td class="text-center">
+                                <div class="btn-group gap-1">
+                                    <a asp-action="Edit" asp-route-id="@item.BookId" class="btn btn-sm btn-warning">Sửa</a>
+                                    <a asp-action="Details" asp-route-id="@item.BookId" class="btn btn-sm btn-info text-white">Xem</a>
+                                    <a asp-action="Delete" asp-route-id="@item.BookId" class="btn btn-sm btn-danger">Xóa</a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="10" class="text-center text-muted py-5 fs-5">
+                            Hiện tại không có cuốn sách nào trong cơ sở dữ liệu.
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

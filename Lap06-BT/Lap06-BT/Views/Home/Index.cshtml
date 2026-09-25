@@ -1,0 +1,89 @@
+﻿@model IEnumerable<Lap06_BT.Models.Banner>
+
+@{
+    ViewData["Title"] = "Trang chủ";
+}
+
+<!-- KHU VỰC HIỂN THỊ BANNER SLIDE (CAROUSEL) -->
+@if (Model != null && Model.Any())
+{
+    <div id="homeBannerCarousel" class="carousel slide shadow mb-5" data-bs-ride="carousel">
+        <!-- Các nút chấm tròn chuyển slide ở dưới -->
+        <div class="carousel-indicators">
+            @for (int i = 0; i < Model.Count(); i++)
+            {
+                <button type="button" data-bs-target="#homeBannerCarousel" data-bs-slide-to="@i" class="@(i == 0 ? "active" : "")" aria-current="@(i == 0 ? "true" : "")"></button>
+            }
+        </div>
+
+        <!-- Danh sách hình ảnh banner lấy từ Database -->
+        <div class="carousel-inner" style="background-color: #0d47a1;">
+            @{
+                int index = 0;
+                foreach (var banner in Model)
+                {
+                    <div class="carousel-item @(index == 0 ? "active" : "")" style="height: 380px;">
+                        @if (!string.IsNullOrEmpty(banner.Image))
+                        {
+                            <img src="~/images/@banner.Image" class="d-block w-100 h-100" style="object-fit: cover;" alt="@banner.Name">
+                        }
+                        else
+                        {
+                            <img src="~/images/default-image.png" class="d-block w-100 h-100" style="object-fit: cover;" alt="No Image">
+                        }
+
+                        <!-- Phần chữ mô tả hiển thị đè lên ảnh giống hình mẫu đề bài -->
+                        <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.3); border-radius: 10px; padding: 15px;">
+                            <h2 class="fw-bold text-white">@banner.Name</h2>
+                            <p class="text-white-50">@banner.Description</p>
+                            <a href="#" class="btn btn-light btn-sm fw-bold px-3">Learn More</a>
+                        </div>
+                    </div>
+                    index++;
+                }
+            }
+        </div>
+
+        <!-- Nút bấm chuyển slide qua trái -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#homeBannerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <!-- Nút bấm chuyển slide qua phải -->
+        <button class="carousel-control-next" type="button" data-bs-target="#homeBannerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+}
+else
+{
+    <!-- Nếu chưa có dữ liệu banner, hiển thị khung thông báo trống -->
+    <div class="p-5 bg-primary text-white text-center rounded shadow mb-5">
+        <h1>Welcome to NetCoreLAB6_EF</h1>
+        <p>Vui lòng vào mục "Quản Lý Banner" để thêm hình ảnh hiển thị tại đây.</p>
+    </div>
+}
+
+
+<!-- DÁN ĐOẠN NÀY VÀO CUỐI CÙNG FILE INDEX.CSHTML TRANG CHỦ -->
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Lấy thực thể Carousel bằng ID
+            var myCarouselEl = document.getElementById('homeBannerCarousel');
+            if (myCarouselEl) {
+                // Ép buộc khởi tạo hiệu ứng trượt chuyển động
+                var carousel = new bootstrap.Carousel(myCarouselEl, {
+                    interval: 2000, // Tự động trượt nhanh hơn sau mỗi 2 giây để bạn dễ kiểm tra
+                    ride: 'carousel',
+                    wrap: true
+                });
+
+                // Lệnh kích hoạt chu trình trượt tự động ngay lập tức
+                carousel.cycle();
+            }
+        });
+    </script>
+}
