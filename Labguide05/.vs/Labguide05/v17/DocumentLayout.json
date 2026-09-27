@@ -62,8 +62,7 @@
               "RelativeToolTip": "Labguide05\\Views\\Account\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-23T08:46:35.116Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T08:46:35.116Z"
             },
             {
               "$type": "Document",
@@ -75,8 +74,7 @@
               "RelativeToolTip": "Labguide05\\Views\\Product\\Create.cshtml",
               "ViewState": "AgIAAB4AAAAAAAAAAAAswDkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-23T09:26:20.918Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T09:26:20.918Z"
             },
             {
               "$type": "Document",
@@ -86,7 +84,7 @@
               "RelativeDocumentMoniker": "Labguide05\\Models\\ProductController.cs",
               "ToolTip": "D:\\ASP.NETCORE\\Labguide05\\Labguide05\\Models\\ProductController.cs",
               "RelativeToolTip": "Labguide05\\Models\\ProductController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-23T09:02:30.215Z",
               "EditorCaption": ""
@@ -101,8 +99,7 @@
               "RelativeToolTip": "Labguide05\\Views\\Product\\Index.cshtml",
               "ViewState": "AgIAAB4AAAAAAAAAAAAswC4AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-23T09:29:43.065Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T09:29:43.065Z"
             },
             {
               "$type": "Document",
@@ -114,8 +111,7 @@
               "RelativeToolTip": "Labguide05\\Models\\Account.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T08:33:20.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T08:33:20.606Z"
             },
             {
               "$type": "Document",
@@ -127,8 +123,7 @@
               "RelativeToolTip": "Labguide05\\Models\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T09:00:06.772Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T09:00:06.772Z"
             },
             {
               "$type": "Document",
@@ -140,8 +135,7 @@
               "RelativeToolTip": "Labguide05\\Models\\Product.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAcwEMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T09:00:30.669Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T09:00:30.669Z"
             },
             {
               "$type": "Document",
@@ -153,8 +147,7 @@
               "RelativeToolTip": "Labguide05\\Models\\CategoryController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T09:02:16.239Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T09:02:16.239Z"
             },
             {
               "$type": "Document",
@@ -166,8 +159,7 @@
               "RelativeToolTip": "Labguide05\\Views\\Account\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-23T08:47:02.995Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T08:47:02.995Z"
             },
             {
               "$type": "Document",
@@ -179,8 +171,7 @@
               "RelativeToolTip": "Labguide05\\Models\\AccountController.cs",
               "ViewState": "AgIAAF0AAAAAAAAAAAAcwHYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T08:42:56.597Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T08:42:56.597Z"
             }
           ]
         }

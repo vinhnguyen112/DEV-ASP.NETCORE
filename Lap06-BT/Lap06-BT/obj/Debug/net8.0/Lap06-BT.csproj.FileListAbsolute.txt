@@ -138,10 +138,10 @@ D:\ASP.NETCORE\Lap06-BT\Lap06-BT\obj\Debug\net8.0\staticwebassets.build.json
 D:\ASP.NETCORE\Lap06-BT\Lap06-BT\obj\Debug\net8.0\staticwebassets.build.json.cache
 D:\ASP.NETCORE\Lap06-BT\Lap06-BT\obj\Debug\net8.0\staticwebassets.development.json
 D:\ASP.NETCORE\Lap06-BT\Lap06-BT\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-D:\ASP.NETCORE\Lap06-BT\Lap06-BT\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\ASP.NETCORE\Lap06-BT\Lap06-BT\obj\Debug\net8.0\Lap06-BT.csproj.Up2Date
 D:\ASP.NETCORE\Lap06-BT\Lap06-BT\obj\Debug\net8.0\Lap06-BT.dll
 D:\ASP.NETCORE\Lap06-BT\Lap06-BT\obj\Debug\net8.0\refint\Lap06-BT.dll
 D:\ASP.NETCORE\Lap06-BT\Lap06-BT\obj\Debug\net8.0\Lap06-BT.pdb
 D:\ASP.NETCORE\Lap06-BT\Lap06-BT\obj\Debug\net8.0\Lap06-BT.genruntimeconfig.cache
 D:\ASP.NETCORE\Lap06-BT\Lap06-BT\obj\Debug\net8.0\ref\Lap06-BT.dll
+D:\ASP.NETCORE\Lap06-BT\Lap06-BT\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
