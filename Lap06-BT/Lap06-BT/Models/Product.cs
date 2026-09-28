@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Lap06_BT.Models
@@ -14,10 +14,10 @@ namespace Lap06_BT.Models
         public string Name { get; set; }
 
         [Column(TypeName = "varchar(150)")]
-        public string? Image { get; set; } // Cột này lưu chuỗi tên file dưới SQL
+        public string? Image { get; set; }
 
         [NotMapped]
-        public IFormFile? ImageFile { get; set; } // Thuộc tính tạm thời dùng để nhận file upload
+        public IFormFile? ImageFile { get; set; }
 
         [Required(ErrorMessage = "Giá sản phẩm không được để trống")]
         public float Price { get; set; }
@@ -36,7 +36,6 @@ namespace Lap06_BT.Models
 
 
 
-        // khóa ngoại tới bảng Category
         public Category? Category { get; set; }
 
     }

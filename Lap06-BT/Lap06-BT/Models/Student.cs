@@ -42,7 +42,6 @@ public class Student
     [ValidateNever]
     public virtual StdClass? StdClass { get; set; }
 
-    // Navigation property
     [ValidateNever]
     public virtual ICollection<Marks>? Marks { get; set; } = new List<Marks>();
 }

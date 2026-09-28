@@ -13,7 +13,6 @@ public class Subjects
     [StringLength(100)]
     public string SubjectName { get; set; }
 
-    // Navigation property
     [ValidateNever]
     public virtual ICollection<Marks>? Marks { get; set; } = new List<Marks>();
 }

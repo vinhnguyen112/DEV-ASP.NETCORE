@@ -13,7 +13,6 @@ public class StdClass
     [StringLength(100)]
     public string CLassName { get; set; }
 
-    // Navigation property
     [ValidateNever]
     public virtual ICollection<Student>? Students { get; set; } = new List<Student>();
 }

@@ -1,71 +1,64 @@
-﻿@model IEnumerable<Lap06_BT.Models.Banner>
+@model IEnumerable<Lap06_BT.Models.Banner>
 
 @{
-    ViewData["Title"] = "Danh sách Banner";
+    ViewData["Title"] = "Index";
 }
 
-<div class="container mt-4">
-    <div class="d-flex justify-content-between align-items-center mb-3">
-        <h2>Danh sách Banner</h2>
-        <a asp-action="Create" class="btn btn-primary">Tạo mới Banner</a>
-    </div>
+<h1>Index</h1>
 
-    <table class="table table-bordered table-striped align-middle">
-        <thead class="table-dark">
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                Image
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
             <tr>
-                <th>ID</th>
-                <th style="width: 150px;">Hình ảnh</th>
-                <th>Tên Banner</th>
-                <th>Mô tả</th>
-                <th>Ngày tạo</th>
-                <th>Trạng thái</th>
-                <th class="text-center">Hành động</th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @if (!string.IsNullOrEmpty(item.Image))
+                    {
+                        <img src="~/images/@item.Image" class="img-thumbnail" style="max-width: 100px; max-height: 70px; object-fit: cover;" alt="@item.Name" />
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
             </tr>
-        </thead>
-        <tbody>
-            @if (Model != null && Model.Any())
-            {
-                foreach (var item in Model)
-                {
-                    <tr>
-                        <td>@item.Id</td>
-                        <td class="text-center">
-                            @if (!string.IsNullOrEmpty(item.Image))
-                            {
-                                <img src="~/images/@item.Image" class="img-thumbnail" style="max-width: 120px; max-height: 80px; object-fit: cover;" alt="@item.Name" />
-                            }
-                            else
-                            {
-                                <img src="~/images/default-image.png" class="img-thumbnail" style="max-width: 120px; max-height: 80px; object-fit: cover;" alt="No Image" />
-                            }
-                        </td>
-                        <td class="fw-bold">@item.Name</td>
-                        <td>@item.Description</td>
-                        <td>@item.CreatedDate.ToString("dd/MM/yyyy")</td>
-                        <td>
-                            @if (item.Status == 1)
-                            {
-                                <span class="badge bg-success">Hiển thị</span>
-                            }
-                            else
-                            {
-                                <span class="badge bg-danger">Ẩn</span>
-                            }
-                        </td>
-                        <td class="text-center">
-                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Sửa</a> |
-                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm text-white">Chi tiết</a> |
-                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Xóa</a>
-                        </td>
-                    </tr>
-                }
-            }
-            else
-            {
-                <tr>
-                    <td colspan="7" class="text-center text-muted">Chưa có banner nào. Hãy bấm nút tạo mới!</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-</div>
+        }
+    </tbody>
+</table>
+
