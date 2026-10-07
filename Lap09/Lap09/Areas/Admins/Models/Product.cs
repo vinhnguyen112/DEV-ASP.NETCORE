@@ -33,6 +33,6 @@ namespace Lap09.Areas.Admins.Models
         public DateTime CreatedDate { get; set; }
 
         // khóa ngoại tới bảng Category
-        public Category Category { get; set; } = null!;
+        public Category? Category { get; set; }
     }
 }

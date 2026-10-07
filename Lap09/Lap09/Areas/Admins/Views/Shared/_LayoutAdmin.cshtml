@@ -233,14 +233,26 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a asp-area="Admins" asp-controller="Category" asp-action="Index" class="nav-link">
+                                    <a asp-area="Admins" asp-controller="Product" asp-action="Index" class="nav-link">
                                         <i class="nav-icon bi bi-circle"></i>
-                                        <p>Dashboard v3</p>
+                                        <p>Product</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-area="Admins" asp-controller="Banner" asp-action="Index" class="nav-link">
+                                        <i class="nav-icon bi bi-circle"></i>
+                                        <p>Banner</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-area="Admins" asp-controller="Blog" asp-action="Index" class="nav-link">
+                                        <i class="nav-icon bi bi-circle"></i>
+                                        <p>Blog</p>
                                     </a>
                                 </li>
                             </ul>
                         </li>
-                        
+
                     </ul>
                     <!--end::Sidebar Menu-->
                     <!-- Docs CTA (bottom of sidebar) -->
@@ -322,18 +334,10 @@
     <!--end::OverlayScrollbars Configure-->
     <!--begin::Charts follow the colour mode-->
     <script>
-        // ApexCharts draws light-theme tooltips and axis text unless told otherwise,
-        // which is unreadable in dark mode (#6105). Give it the page's colour mode as
-        // a global default before any chart is created — this runs before the chart
-        // pages' own scripts — and keep every chart that has a `chart.id` in step
-        // when the mode changes (ColorMode, the OS in auto mode, or your own code).
         (() => {
           'use strict';
           const mode = () =>
             document.documentElement.getAttribute('data-bs-theme') === 'dark' ? 'dark' : 'light';
-          // `Apex` is ApexCharts' global-options object; it must exist before the library loads.
-          // theme.mode also sets a dark chart background — keep the card's instead.
-          // eslint-disable-next-line unicorn/no-global-object-property-assignment
           globalThis.Apex ||= {};
           const apex = globalThis.Apex;
           apex.theme = { mode: mode() };
@@ -352,16 +356,10 @@
         })();
     </script>
     <!--end::Charts follow the colour mode-->
-    <!--begin::Color Mode Toggle-->
-    <!-- The light/dark/auto switcher ships in adminlte.js as the ColorMode
-     module (since 4.1) — no page script needed. Only the no-flash snippet
-     in <head> stays inline, because it must run before first paint. -->
-    <!--end::Color Mode Toggle-->
     <!-- OPTIONAL SCRIPTS -->
     <!-- sortablejs -->
     <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"
             crossorigin="anonymous"></script>
-    <!-- sortablejs -->
     <script>
         document.querySelectorAll('.connectedSortable').forEach(function(sortableEl) {
           new Sortable(sortableEl, {
@@ -379,65 +377,61 @@
     <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.min.js"
             integrity="sha256-+vh8GkaU7C9/wbSLIcwq82tQ2wTf44aOHA8HlBMwRI8="
             crossorigin="anonymous"></script>
-    <!-- ChartJS -->
+    <!-- ChartJS / Revenue Chart -->
     <script>
-        // NOTICE!! DO NOT USE ANY OF THIS JAVASCRIPT
-        // IT'S ALL JUST JUNK FOR DEMO
-        // ++++++++++++++++++++++++++++++++++++++++++
-
         const sales_chart_options = {
-          series: [
-            {
-              name: 'Digital Goods',
-              data: [28, 48, 40, 19, 86, 27, 90],
+            series: [
+              {
+                name: 'Digital Goods',
+                data: [28, 48, 40, 19, 86, 27, 90],
+              },
+              {
+                name: 'Electronics',
+                data: [65, 59, 80, 81, 56, 55, 40],
+              },
+            ],
+            chart: {
+              id: 'revenue-chart',
+              height: 300,
+              type: 'area',
+              toolbar: {
+                show: false,
+              },
             },
-            {
-              name: 'Electronics',
-              data: [65, 59, 80, 81, 56, 55, 40],
-            },
-          ],
-          chart: {
-            id: 'revenue-chart',
-            height: 300,
-            type: 'area',
-            toolbar: {
+            legend: {
               show: false,
             },
-          },
-          legend: {
-            show: false,
-          },
-          colors: ['#0d6efd', '#20c997'],
-          dataLabels: {
-            enabled: false,
-          },
-          stroke: {
-            curve: 'smooth',
-          },
-          xaxis: {
-            type: 'datetime',
-            categories: [
-              '2023-01-01',
-              '2023-02-01',
-              '2023-03-01',
-              '2023-04-01',
-              '2023-05-01',
-              '2023-06-01',
-              '2023-07-01',
-            ],
-          },
-          tooltip: {
-            x: {
-              format: 'MMMM yyyy',
+            colors: ['#0d6efd', '#20c997'],
+            dataLabels: {
+              enabled: false,
             },
-          },
+            stroke: {
+              curve: 'smooth',
+            },
+            xaxis: {
+              type: 'datetime',
+              categories: [
+                '2023-01-01',
+                '2023-02-01',
+                '2023-03-01',
+                '2023-04-01',
+                '2023-05-01',
+                '2023-06-01',
+                '2023-07-01',
+              ],
+            },
+            tooltip: {
+              x: {
+                format: 'MMMM yyyy',
+              },
+            },
         };
 
-        const sales_chart = new ApexCharts(
-          document.querySelector('#revenue-chart'),
-          sales_chart_options,
-        );
-        sales_chart.render();
+        const revenueChartEl = document.querySelector('#revenue-chart');
+        if (revenueChartEl) {
+            const sales_chart = new ApexCharts(revenueChartEl, sales_chart_options);
+            sales_chart.render();
+        }
     </script>
     <!-- jsvectormap -->
     <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/js/jsvectormap.min.js"
@@ -446,103 +440,63 @@
     <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/maps/world.js"
             integrity="sha256-XPpPaZlU8S/HWf7FZLAncLg2SAkP8ScUTII89x9D3lY="
             crossorigin="anonymous"></script>
-    <!-- jsvectormap -->
     <script>
         // World map by jsVectorMap
-        new jsVectorMap({
-          selector: '#world-map',
-          map: 'world',
-        });
+        const worldMapEl = document.querySelector('#world-map');
+        if (worldMapEl) {
+            new jsVectorMap({
+              selector: '#world-map',
+              map: 'world',
+            });
+        }
 
-        // Sparkline charts
+        // Sparkline charts 1
         const option_sparkline1 = {
-          series: [
-            {
-              data: [1000, 1200, 920, 927, 931, 1027, 819, 930, 1021],
-            },
-          ],
-          chart: {
-            id: 'sparkline-1',
-            type: 'area',
-            height: 50,
-            sparkline: {
-              enabled: true,
-            },
-          },
-          stroke: {
-            curve: 'straight',
-          },
-          fill: {
-            opacity: 0.3,
-          },
-          yaxis: {
-            min: 0,
-          },
-          colors: ['#DCE6EC'],
+            series: [{ data: [1000, 1200, 920, 927, 931, 1027, 819, 930, 1021] }],
+            chart: { id: 'sparkline-1', type: 'area', height: 50, sparkline: { enabled: true } },
+            stroke: { curve: 'straight' },
+            fill: { opacity: 0.3 },
+            yaxis: { min: 0 },
+            colors: ['#DCE6EC'],
         };
+        const sparkline1El = document.querySelector('#sparkline-1');
+        if (sparkline1El) {
+            const sparkline1 = new ApexCharts(sparkline1El, option_sparkline1);
+            sparkline1.render();
+        }
 
-        const sparkline1 = new ApexCharts(document.querySelector('#sparkline-1'), option_sparkline1);
-        sparkline1.render();
-
+        // Sparkline charts 2
         const option_sparkline2 = {
-          series: [
-            {
-              data: [515, 519, 520, 522, 652, 810, 370, 627, 319, 630, 921],
-            },
-          ],
-          chart: {
-            id: 'sparkline-2',
-            type: 'area',
-            height: 50,
-            sparkline: {
-              enabled: true,
-            },
-          },
-          stroke: {
-            curve: 'straight',
-          },
-          fill: {
-            opacity: 0.3,
-          },
-          yaxis: {
-            min: 0,
-          },
-          colors: ['#DCE6EC'],
+            series: [{ data: [515, 519, 520, 522, 652, 810, 370, 627, 319, 630, 921] }],
+            chart: { id: 'sparkline-2', type: 'area', height: 50, sparkline: { enabled: true } },
+            stroke: { curve: 'straight' },
+            fill: { opacity: 0.3 },
+            yaxis: { min: 0 },
+            colors: ['#DCE6EC'],
         };
+        const sparkline2El = document.querySelector('#sparkline-2');
+        if (sparkline2El) {
+            const sparkline2 = new ApexCharts(sparkline2El, option_sparkline2);
+            sparkline2.render();
+        }
 
-        const sparkline2 = new ApexCharts(document.querySelector('#sparkline-2'), option_sparkline2);
-        sparkline2.render();
-
+        // Sparkline charts 3
         const option_sparkline3 = {
-          series: [
-            {
-              data: [15, 19, 20, 22, 33, 27, 31, 27, 19, 30, 21],
-            },
-          ],
-          chart: {
-            id: 'sparkline-3',
-            type: 'area',
-            height: 50,
-            sparkline: {
-              enabled: true,
-            },
-          },
-          stroke: {
-            curve: 'straight',
-          },
-          fill: {
-            opacity: 0.3,
-          },
-          yaxis: {
-            min: 0,
-          },
-          colors: ['#DCE6EC'],
+            series: [{ data: [15, 19, 20, 22, 33, 27, 31, 27, 19, 30, 21] }],
+            chart: { id: 'sparkline-3', type: 'area', height: 50, sparkline: { enabled: true } },
+            stroke: { curve: 'straight' },
+            fill: { opacity: 0.3 },
+            yaxis: { min: 0 },
+            colors: ['#DCE6EC'],
         };
-
-        const sparkline3 = new ApexCharts(document.querySelector('#sparkline-3'), option_sparkline3);
-        sparkline3.render();
+        const sparkline3El = document.querySelector('#sparkline-3');
+        if (sparkline3El) {
+            const sparkline3 = new ApexCharts(sparkline3El, option_sparkline3);
+            sparkline3.render();
+        }
     </script>
     <!--end::Script-->
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 <!--end::Body-->
 </html>
