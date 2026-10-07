@@ -1,0 +1,43 @@
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Dashboard Quản trị";
+}
+
+<div class="row mb-4">
+    <div class="col-12">
+        <h2 class="fw-bold text-dark">Bảng điều khiển (Admin Dashboard)</h2>
+        <p class="text-muted">Chào mừng bạn đến với trang quản trị hệ thống Lap07!</p>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-md-4">
+        <div class="card bg-primary text-white shadow-sm h-100">
+            <div class="card-body">
+                <h5 class="card-title">Quản lý Danh mục</h5>
+                <p class="card-text">Quản lý, thêm, sửa, xóa các danh mục trong hệ thống.</p>
+                <a asp-area="Admins" asp-controller="Category" asp-action="Index" class="btn btn-light btn-sm fw-bold">Đi đến Danh mục</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-success text-white shadow-sm h-100">
+            <div class="card-body">
+                <h5 class="card-title">Trạng thái Khu vực (Area)</h5>
+                <p class="card-text">Area <code>Admins</code> đang hoạt động chính xác với cấu hình Route.</p>
+                <span class="badge bg-light text-success fw-bold">Active</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-info text-white shadow-sm h-100">
+            <div class="card-body">
+                <h5 class="card-title">Trang người dùng</h5>
+                <p class="card-text">Chuyển sang giao diện người dùng bên ngoài Client.</p>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="btn btn-light btn-sm fw-bold">Xem trang Client</a>
+            </div>
+        </div>
+    </div>
+</div>

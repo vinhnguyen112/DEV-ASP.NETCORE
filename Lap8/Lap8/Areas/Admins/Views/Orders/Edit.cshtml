@@ -1,0 +1,76 @@
+@model Lesson08.Lab.Models.Orders
+
+@{
+    ViewData["Title"] = "Chỉnh sửa đơn hàng";
+}
+
+<div class="container-fluid p-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h4 class="mb-0">Chỉnh sửa đơn hàng</h4>
+        <a asp-action="Index" class="btn btn-secondary btn-sm">Quay lại danh sách</a>
+    </div>
+
+    <div class="card">
+        <div class="card-header bg-white py-3">
+            <h5 class="card-title mb-0">Cập nhật đơn hàng #@Model.Id</h5>
+        </div>
+        <div class="card-body p-4">
+            <form asp-action="Edit" method="post">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+                <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="CreatedDate" />
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label asp-for="CustomerId" class="form-label fw-semibold">Khách hàng</label>
+                        <select asp-for="CustomerId" class="form-select" asp-items="ViewBag.CustomerId"></select>
+                        <span asp-validation-for="CustomerId" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="Status" class="form-label fw-semibold">Trạng thái đơn hàng</label>
+                        <select asp-for="Status" class="form-select">
+                            <option value="0">Chờ xử lý</option>
+                            <option value="1">Đang giao</option>
+                            <option value="2">Đã hoàn thành</option>
+                            <option value="3">Đã hủy</option>
+                        </select>
+                        <span asp-validation-for="Status" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="Name" class="form-label fw-semibold">Họ tên người nhận</label>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="Email" class="form-label fw-semibold">Email người nhận</label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold">Ngày tạo đơn</label>
+                        <input class="form-control" value="@Model.CreatedDate.ToString("dd/MM/yyyy HH:mm")" readonly disabled />
+                    </div>
+
+                    <div class="col-12">
+                        <label asp-for="Address" class="form-label fw-semibold">Địa chỉ giao hàng</label>
+                        <input asp-for="Address" class="form-control" />
+                        <span asp-validation-for="Address" class="text-danger small"></span>
+                    </div>
+                </div>
+
+                <div class="mt-4 pt-3 border-top">
+                    <button type="submit" class="btn btn-primary">Cập nhật thay đổi</button>
+                    <a asp-action="Index" class="btn btn-light border ms-2">Hủy bỏ</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
